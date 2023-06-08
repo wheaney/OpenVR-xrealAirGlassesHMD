@@ -29,7 +29,7 @@ cmake ..
 make
 
 # move and rename the compiled driver to the driver directory
-mv libdriver_air_glasses.so air_glasses/driver_air_glasses.so
+mv libdriver_air_glasses.so air_glasses/bin/linux64/driver_air_glasses.so
 
 # copy the udev rule that's needed for the USB integration
 cp -r ../modules/xrealAirLinuxDriver/udev air_glasses/
