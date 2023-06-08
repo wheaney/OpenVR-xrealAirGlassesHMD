@@ -75,8 +75,6 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY $<1:${CMAKE_CURRENT_BINARY_DIR}/${TARGET_NAME
 add_library(${DRIVER_NAME} SHARED
         src/driver_air_glasses.h
         src/driver_air_glasses.cpp
-        src/driverlog.cpp
-        src/driverlog.h
         )
 
 target_link_libraries(${DRIVER_NAME} PRIVATE ${OPENVR_LIBRARIES})

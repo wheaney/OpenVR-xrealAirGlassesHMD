@@ -5,7 +5,7 @@
 #include <thread>
 #include <chrono>
 #include <algorithm>
-#include "../modules/nrealAirLinuxDriver/interface_lib/include/device3.h"
+#include "../modules/xrealAirLinuxDriver/interface_lib/include/device3.h"
 #include <math.h>
 #include <string.h>
 
