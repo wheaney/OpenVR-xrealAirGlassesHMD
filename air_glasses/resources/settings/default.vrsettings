@@ -1,0 +1,17 @@
+{
+	"driver_air_glasses": {
+		"enable": true
+	},
+	"steamvr": {
+	    "serialNumber": "airGlassesSerial-123",
+	    "modelNumber": "airGlasses-2022",
+	    "directMode": true,
+	    "usingSpeakers": true,
+	    "windowWidth": 3840,
+	    "windowHeight": 1080,
+	    "renderWidth": 1920,
+	    "renderHeight": 1080,
+	    "displayFrequency": 60,
+	    "FOV": 52
+	}
+}

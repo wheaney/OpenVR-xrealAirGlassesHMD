@@ -1,0 +1,6 @@
+[submodule "modules/openvr"]
+	path = modules/openvr
+	url = https://github.com/ValveSoftware/openvr
+[submodule "modules/xrealAirLinuxDriver"]
+	path = modules/xrealAirLinuxDriver
+	url = https://github.com/wheaney/xrealAirLinuxDriver

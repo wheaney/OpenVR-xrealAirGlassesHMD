@@ -1,0 +1,9 @@
+{
+  "alwaysActivate": true,
+  "name": "air_glasses",
+  "directory": "",
+  "resourceOnly": false,
+  "hmd_presence": [
+    "3318.0424"
+  ]
+}
