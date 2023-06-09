@@ -25,9 +25,11 @@ From there:
 1. Run the build instructions above or download the latest build
 2. Extract the resulting tar gzip file to your SteamVR drivers directory. This should be something like 
 `~/.steam/steam/steamapps/common/SteamVR/drivers/`. Be sure this extracts as the directory `air_glasses`, which should
-contain the file `driver_air_glasses.so`.
+contain the directories `resources` and `bin`.
 3. Copy the `nreal_air.rules` file from the `udev` directory to `/etc/udev/rules.d/`
-4. Restart Steam (not usually necessary)
+   * For Steam Deck, you may need to disable the readonly file system: `sudo steamos-readonly disable`
+   * Reload the udev rules using something like `udevadm control --reload`
+5. Restart Steam (not usually necessary)
 
 # Using xReal Air glasses as a HMD VR device
 If you're on the Steam Deck, switch to desktop mode. Launch SteamVR. Run the room configuration and set it up for 
