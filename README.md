@@ -1,5 +1,5 @@
 # About
-I wanted to see if I could experience any VR games using a standard controller and the xReal Air glasses with head
+I wanted to see if I could experience any VR games using a standard controller and the XREAL Air glasses with head
 tracking. I came across an [OpenVR HMD library](https://github.com/r57zone/OpenVR-ArduinoHMD) that build out the basic
 HMD integration that would work with SteamVR and a 
 [Linux USB driver](https://gitlab.com/TheJackiMonster/nrealAirLinuxDriver) that provided the necessary outputs to plug
@@ -12,21 +12,23 @@ Building requires cmake 3.21 or later.
 
 To build, just run `bin/package.sh`.
 
-# Installing
+# SteamVR Usage
+## Installing
 You'll need to install [SteamVR](https://store.steampowered.com/app/250820/SteamVR/) before you can install this driver.
 
 From there:
-1. Run the build instructions above or download the latest build
+1. [Download the latest build](https://github.com/wheaney/OpenVR-xrealAirGlassesHMD/releases/latest/download/driver_air_glasses.tar.gz) or run the build instructions above
 2. Extract the resulting tar gzip file to your home directory or wherever your prefer; from this you should have an `air_glasses` directory (the one containing the directories `resources` and `bin`). Then use `vrpathreg` to register your driver with SteamVR. This looks something like: `~/.steam/steam/steamapps/common/SteamVR/bin/vrpathreg.sh adddriver ~/air_glasses`.
    * Alternatively, extract the tar gzip file to your SteamVR drivers directory. This should be something like 
 `~/.steam/steam/steamapps/common/SteamVR/drivers/`. Be sure this extracts as the directory `air_glasses`, which should
 contain the directories `resources` and `bin`.
-3. Copy the `nreal_air.rules` file from the `udev` directory to `/etc/udev/rules.d/`
+3. Copy the `60-xreal-air.rules` file from the `udev` directory to `/etc/udev/rules.d/`
    * For Steam Deck, you may need to disable the readonly file system: `sudo steamos-readonly disable`
    * Reload the udev rules using something like `udevadm control --reload`
 4. Restart Steam (not usually necessary)
 
-# Using xReal Air glasses as a HMD VR device
+## Using XREAL Air glasses as a HMD VR device
+
 If you're on the Steam Deck, switch to desktop mode. Launch SteamVR. Run the room configuration and set it up for 
 sitting mode, with a non-zero height (e.g. 60 inches or a reasonable height). You can hold the brightness up button on 
 your glasses for a few seconds to enable side-by-side 3d.

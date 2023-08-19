@@ -61,7 +61,7 @@ find_library(OPENVR_LIBRARIES
 
 find_library(AIR_LIBRARIES
         NAMES
-        nrealAirLibrary
+        xrealAirLibrary
         PATHS
         ${AIR_LIB_DIR}/build/interface_lib
         NO_DEFAULT_PATH

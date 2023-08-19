@@ -5,13 +5,9 @@
 #include <thread>
 #include <chrono>
 #include <algorithm>
-#include "../modules/xrealAirLinuxDriver/interface_lib/include/device3.h"
 #include <math.h>
 #include <string.h>
-
-#if defined( _WINDOWS )
-#include <windows.h>
-#endif
+#include "../modules/xrealAirLinuxDriver/interface_lib/include/device3.h"
 
 #pragma warning (disable: 4996)
 
@@ -204,7 +200,7 @@ void AirGlassesIMUThreadStart()
 
     while (dev3) {
         HMDConnected = true;
-        if (device3_read(dev3, 0) < 0) {
+        if (device3_read(dev3, 0, false) < 0) {
             break;
         }
 	}
