@@ -7,6 +7,10 @@ into the former. I'm not a C++ developer, so it took many days of tinkering and 
 (I'm sure my CMake setup could be greatly cleaned up and simplified, so I welcome some PRs here) and many more days of
 tinkering to link to two libraries together and get the compiled driver working in SteamVR.
 
+If you're looking for general, lightweight head-tracking support for all games (including non-VR), check out my other [XREAL Air Linux Game Driver](https://github.com/wheaney/xrealAirLinuxDriver).
+
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/U7U8OVC0L)
+
 # Build
 Building requires cmake 3.21 or later.
 
